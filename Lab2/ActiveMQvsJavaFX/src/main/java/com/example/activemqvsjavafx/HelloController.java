@@ -1,14 +1,16 @@
 package com.example.activemqvsjavafx;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
-
+    private Button btnSend;
+    private Button btnLoadMessage;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void handleClickSend() throws Exception {
+        //Sender.Send();
+        System.out.println("Send button");
     }
 }
