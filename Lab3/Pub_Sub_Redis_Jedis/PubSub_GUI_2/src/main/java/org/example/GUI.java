@@ -55,7 +55,7 @@ public class GUI extends JFrame {
                 if (message.isBlank()) {
                 } else {
                     txtMessage.setText("");
-                    jedis.rpush("chat_history", message);
+                   // jedis.rpush("chat_history", message);
                     sendMessage("Chat 2: " + message + '\n');
                 }
             }
@@ -141,7 +141,7 @@ public class GUI extends JFrame {
                             TextMessage tm = (TextMessage) msg;
                             String txt = tm.getText();
                             txtaShowMessage.append(txt);
-                            jedis.rpush("chat_history", txt);
+                            //jedis.rpush("chat_history", txt);
                             System.out.println("XML= " + txt);
                             msg.acknowledge();//gửi tín hiệu ack
                         }

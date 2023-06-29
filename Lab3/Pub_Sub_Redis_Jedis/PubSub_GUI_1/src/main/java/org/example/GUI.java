@@ -55,7 +55,7 @@ public class GUI extends JFrame {
                 if (message.isBlank()) {
                 } else {
                     txtMessage.setText("");
-                    jedis.rpush("chat_history", message);
+                    //jedis.rpush("chat_history", message);
                     sendMessage("Chat 1: " + message + '\n');
                 }
             }
