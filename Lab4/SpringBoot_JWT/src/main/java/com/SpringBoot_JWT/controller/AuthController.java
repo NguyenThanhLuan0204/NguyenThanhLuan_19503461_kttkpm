@@ -79,6 +79,7 @@ public class AuthController {
     @PutMapping("/user")
     @PreAuthorize("hasAnyAuthority('USER_UPDATE')")
     public ResponseEntity update() {
+
         return ResponseEntity.ok("This is update");
     }
 
